@@ -1,0 +1,56 @@
+{
+	"section_count": 10,
+	"section": [
+		{
+			"name": "0",
+			"description": "本站站务",
+			"is_root": true,
+			"parent": null
+		}, {
+			"name": "1",
+			"description": "北邮校园",
+			"is_root": true,
+			"parent": null
+		}, {
+			"name": "2",
+			"description": "学术科技",
+			"is_root": true,
+			"parent": null
+		}, {
+			"name": "3",
+			"description": "信息社会",
+			"is_root": true,
+			"parent": null
+		}, {
+			"name": "4",
+			"description": "人文艺术",
+			"is_root": true,
+			"parent": null
+		}, {
+			"name": "5",
+			"description": "生活时尚",
+			"is_root": true,
+			"parent": null
+		}, {
+			"name": "6",
+			"description": "休闲娱乐",
+			"is_root": true,
+			"parent": null
+		}, {
+			"name": "7",
+			"description": "体育健身",
+			"is_root": true,
+			"parent": null
+		}, {
+			"name": "8",
+			"description": "游戏对战",
+			"is_root": true,
+			"parent": null
+		}, {
+			"name": "9",
+			"description": "乡亲乡爱",
+			"is_root": true,
+			"parent": null
+		}
+	]
+}

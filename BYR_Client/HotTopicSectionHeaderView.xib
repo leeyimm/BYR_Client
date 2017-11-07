@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="SectionHeaderViewIdentifier" id="iN0-l3-epB" customClass="HotTopicSectionHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="48"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tTu-8N-lp1">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="48"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeA-g3-iWy">
+                            <rect key="frame" x="0.0" y="6" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="Hed-Zs-T3e"/>
+                                <constraint firstAttribute="width" constant="35" id="tlM-Zq-Ty7"/>
+                            </constraints>
+                            <state key="normal" image="carat">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="toggleOpen:" destination="iN0-l3-epB" eventType="touchUpInside" id="YqI-bu-14o"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1U-2J-xjT">
+                            <rect key="frame" x="43" y="13" width="44" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="BeA-g3-iWy" firstAttribute="centerY" secondItem="e1U-2J-xjT" secondAttribute="centerY" id="VW2-l5-C90"/>
+                        <constraint firstItem="BeA-g3-iWy" firstAttribute="leading" secondItem="tTu-8N-lp1" secondAttribute="leading" id="dQ4-vW-3xt"/>
+                        <constraint firstItem="e1U-2J-xjT" firstAttribute="leading" secondItem="BeA-g3-iWy" secondAttribute="trailing" constant="8" id="dWh-Tc-6Ku"/>
+                        <constraint firstItem="BeA-g3-iWy" firstAttribute="top" secondItem="tTu-8N-lp1" secondAttribute="top" constant="6" id="qfI-I4-lag"/>
+                        <constraint firstAttribute="bottom" secondItem="BeA-g3-iWy" secondAttribute="bottom" constant="7" id="yD5-ZG-Zuo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="tTu-8N-lp1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2TS-Zs-0fw"/>
+                <constraint firstAttribute="trailing" secondItem="tTu-8N-lp1" secondAttribute="trailing" id="Tis-il-0iZ"/>
+                <constraint firstAttribute="bottom" secondItem="tTu-8N-lp1" secondAttribute="bottom" id="XWc-U6-Kkm"/>
+                <constraint firstItem="tTu-8N-lp1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tJV-Zj-4Jk"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="XWc-U6-Kkm"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="disclosureButton" destination="BeA-g3-iWy" id="NEG-sr-en8"/>
+                <outlet property="sectionTitleLabel" destination="e1U-2J-xjT" id="UqM-G6-odJ"/>
+            </connections>
+            <point key="canvasLocation" x="352" y="115"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="carat" width="11" height="11"/>
+    </resources>
+</document>
